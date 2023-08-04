@@ -12,7 +12,7 @@ import CreatePost from './pages/CreatePost';
 import PostPage from './pages/PostPage';
 import EditPost from './pages/EditPost';
 
-axios.defaults.baseURL = 'https://emmyojile-blogapp.onrender.com';
+axios.defaults.baseURL = 'https://emmyojile-blogapp.onrender.com/api/v1';
 axios.defaults.withCredentials = true;
 function App() {
 
