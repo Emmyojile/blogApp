@@ -10,7 +10,8 @@ connectDB();
 
 app.use(cors(
     {
-      origin: ["https://emmyojile-blogapp-client.onrender.com"],
+      origin: ["*"],
+      // origin: ["https://emmyojile-blogapp-client.onrender.com"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     }
