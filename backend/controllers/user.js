@@ -14,16 +14,6 @@ exports.dashboard = (req, res) => {
   }else {
     res.json(null);
   }
-    // res.json(req.cookies);
-    //   try {
-//     const token = req.cookies.token;
-//     // const payload = jwt.verify(token, process.env.JWT_SECRET);
-//     // const username = payload.username
-//     // return res.status(200).send(`${username} Welcome to your Dashboard!`);
-//   } catch (error) {
-//     console.error("Failed to load up dashboard :", error.message);
-//     res.status(500).json({ error: "Failed to load up dashboard" });
-//   }
 }
 
 exports.createPost = async (req, res) => {

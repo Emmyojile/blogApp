@@ -16,23 +16,6 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-// app.use(
-//   cors({
-//     origin:"https://emmyojile-blogapp-client.onrender.com",
-//     credentials: true,
-//   })
-// );
-// app.options("*", cors());
-
-// app.use(cors(
-//     {
-//       origin: ["https://emmyojile-blogapp-client.onrender.com"],
-//       methods: ["GET", "POST", "PUT", "DELETE"],
-//       credentials: true,
-//     }
-//   ))
-// app.use(cors({credentials: true, origin:'*'})); 
-// app.use(cors({credentials: true, origin:'https://emmyojile-blogapp-client.onrender.com'})); 
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false}));

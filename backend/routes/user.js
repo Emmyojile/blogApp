@@ -20,9 +20,6 @@ router.route('/getPosts').get(getPosts)
 router.route('/createPost').post(uploadMiddleware.single('file'), createPost)
 
 
-// router.route('/login').post(login)
-
-
 module.exports = router
 
 // const { dashboard } = require('../controllers/dashboard')
