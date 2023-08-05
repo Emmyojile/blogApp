@@ -7,10 +7,14 @@ const userRoutes = require('./routes/user');
 const cookieParser = require('cookie-parser');
 
 connectDB();
-app.use(cors({
-  origin: '*',
-  credentials: true,
-}));
+
+const corsOptions = {
+  origin: process.env.Client_Url, // Update this with the allowed origins or set it to a specific origin
+  methods: "GET, POST, PUT, DELETE", // Update with the allowed HTTP methods
+  allowedHeaders: "Content-Type, Authorization", // Update with the allowed headers
+  credentials: true, // Enable credentials if you're using cookies or other authentication methods
+};
+app.use(cors(corsOptions));
 
 // app.use(
 //   cors({
