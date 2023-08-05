@@ -15,7 +15,7 @@ const [data, setData] = useState({
         e.preventDefault();
         const {username, email, password} = data;
         try {
-        const {data} = await axios.post('/api/v1/register', {
+        const {data} = await axios.post('/register', {
             username, email, password
         })
             if(data.error){

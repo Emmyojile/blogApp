@@ -14,7 +14,7 @@ export default function EditPost () {
     const [files, setFiles] = useState('');
 
     useEffect(() => {
-        axios(`/api/v1/post/` + id).then(response => {
+        axios(`/post/` + id).then(response => {
             const updatePost = response.data;
             setTitle(updatePost.title);
             setContent(updatePost.content);

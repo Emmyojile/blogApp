@@ -22,7 +22,7 @@ export default function CreatePost () {
         data.set('file', files[0]);
         e.preventDefault();
 
-        const response = await axios.post('/api/v1/createPost', data)
+        const response = await axios.post('/createPost', data)
         const newPost = response.data;
 
         if (newPost) {

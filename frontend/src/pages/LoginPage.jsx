@@ -16,7 +16,7 @@ export default function LoginPage () {
         e.preventDefault();
         const { email, password } = data;
         try {
-        const {data} = await axios.post('/api/v1/login', {
+        const {data} = await axios.post('/login', {
             email, password
         });
         if(data.error) {
