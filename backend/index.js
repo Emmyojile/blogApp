@@ -8,15 +8,14 @@ const cookieParser = require('cookie-parser');
 
 connectDB();
 
-app.use(cors(
-    {
-      origin: ["*"],
-      // origin: ["https://emmyojile-blogapp-client.onrender.com"],
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      credentials: true,
-    }
-  ))
-// app.use(cors({credentials: true, origin:'*'})); 
+// app.use(cors(
+//     {
+//       origin: ["https://emmyojile-blogapp-client.onrender.com"],
+//       methods: ["GET", "POST", "PUT", "DELETE"],
+//       credentials: true,
+//     }
+//   ))
+app.use(cors({credentials: true, origin:'*'})); 
 // app.use(cors({credentials: true, origin:'https://emmyojile-blogapp-client.onrender.com'})); 
 app.use(express.json());
 app.use(cookieParser());
