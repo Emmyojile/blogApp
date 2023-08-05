@@ -7,14 +7,18 @@ const userRoutes = require('./routes/user');
 const cookieParser = require('cookie-parser');
 
 connectDB();
+app.use(cors({
+  origin: '*',
+  credentials: true,
+}));
 
-app.use(
-  cors({
-    origin:"https://emmyojile-blogapp-client.onrender.com",
-    credentials: true,
-  })
-);
-app.options("*", cors());
+// app.use(
+//   cors({
+//     origin:"https://emmyojile-blogapp-client.onrender.com",
+//     credentials: true,
+//   })
+// );
+// app.options("*", cors());
 
 // app.use(cors(
 //     {
