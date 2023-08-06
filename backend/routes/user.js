@@ -14,8 +14,6 @@ router.route('/post/:id')
   .get(getSinglePost)
   .put(uploadMiddleware.single('file'), updatePost);
 
-// router.route('/post/:id').get(getSinglePost)
-// router.route('/post/:id').put(uploadMiddleware.single('file'), updatePost)
 router.route('/getPosts').get(getPosts)
 router.route('/createPost').post(uploadMiddleware.single('file'), createPost)
 
