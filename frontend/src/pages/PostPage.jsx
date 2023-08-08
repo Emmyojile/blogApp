@@ -5,6 +5,9 @@ import { Link, useParams } from "react-router-dom";
 import { UserContext } from "../../context/userContext";
 
 export default function PostPage() {
+const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
+
+
   const [postInfo, setPostInfo] = useState(null);
   const { user } = useContext(UserContext);
   const { id } = useParams();
@@ -39,7 +42,8 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`https://emmyojile-blogapp.onrender.com/api/v1/${postInfo.cover}`}></img>
+        <img src={`${PUBLIC_FOLDER + cover}`}></img>
+        {/* <img src={`https://emmyojile-blogapp.onrender.com/api/v1/${postInfo.cover}`}></img> */}
         {/* <img src={`http://localhost:4000/${postInfo.cover}`}></img> */}
       </div>
       <div
