@@ -38,10 +38,6 @@ export default function IndexPage() {
 
 
 
-
-
-
-
 // import { useEffect, useState } from "react"
 // import Post from "../components/Post"
 // import axios from "axios"
