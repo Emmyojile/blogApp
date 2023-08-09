@@ -13,10 +13,10 @@ import PostPage from './pages/PostPage';
 import EditPost from './pages/EditPost';
 
 // axios.defaults.baseURL = 'http://localhost:4000/api/v1';
-axios.defaults.baseURL = 'https://emmyojile-blogapp.onrender.com/';
+// axios.defaults.baseURL = 'https://emmyojile-blogapp.onrender.com/';
 // axios.defaults.baseURL = 'https://emmyojile-blogapp.onrender.com/api/v1';
 
-// axios.defaults.baseURL= import.meta.env.VITE_API_DEV_URL;
+axios.defaults.baseURL= import.meta.env.VITE_API_DEV_URL;
 // axios.defaults.baseURL= import.meta.env.VITE_API_LOCAL_URL;
 // axios.defaults.baseURL= import.meta.env.VITE_API_LOCAL_URL;
 axios.defaults.withCredentials = true;
