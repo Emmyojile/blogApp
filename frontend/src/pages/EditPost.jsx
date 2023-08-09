@@ -5,6 +5,8 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 export default function EditPost () {
+    const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
+
     const navigate = useNavigate();
     const {id} = useParams();
 
@@ -34,7 +36,7 @@ export default function EditPost () {
         }
 
         try {
-            const response = await axios.put(`/post/${id}`, data);
+            const response = await axios.put(`/${PUBLIC_FOLDER}/post/${id}`, data);
             console.log(response.data); // Log the response data to see what's returned from the server
             // Handle the response as needed (e.g., show success message, navigate to a different page, etc.)
             navigate('/post/' + id);
