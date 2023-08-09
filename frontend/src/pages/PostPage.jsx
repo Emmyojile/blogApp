@@ -5,7 +5,10 @@ import { Link, useParams } from "react-router-dom";
 import { UserContext } from "../../context/userContext";
 
 export default function PostPage() {
-const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
+// const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
+
+const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
+
 
 
   const [postInfo, setPostInfo] = useState(null);
