@@ -27,7 +27,7 @@ cd blog-app
 npm install
 ```
 
-- Configure Environment Variables: 
+3. Configure Environment Variables: 
 Create a .env file in the root directory and configure environment variables required for the application, such as database connection settings, JWT secret, etc.
 
 
@@ -35,18 +35,18 @@ Create a .env file in the root directory and configure environment variables req
 Explore the application, create your own account, write blogs, and interact with other users' content. If you'd like to contribute, feel free to fork the repository, make your changes, and submit a pull request.
 
 ## Technologies Used
-Frontend: React, Vite, React Router, CSS Modules
-Backend: Node.js, Express.js, MongoDB
-Authentication: JWT (JSON Web Tokens)
-Toast Notifications: react-hot-toast
-Version Control: Git, GitHub
+- Frontend: React, Vite, React Router, CSS Modules
+- Backend: Node.js, Express.js, MongoDB
+- Authentication: JWT (JSON Web Tokens)
+- Toast Notifications: react-hot-toast
+- Version Control: Git, GitHub
 
 ## Author
-Emmanuel Ojile
+- Emmanuel Ojile
 
 ## License
 The Blog App is open source and available under the MIT License.
 Feel free to modify the content according to your specific project details and preferences.
 
 ## Contact
-For inquiries, issues, or collaboration opportunities, contact emmaojile99@gmail.com.
+For inquiries, issues, or collaboration opportunities, contact me via mail at emmaojile99@gmail.com.
