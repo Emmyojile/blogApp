@@ -16,15 +16,16 @@ The Blog App is a full-fledged web application that enables users to create, edi
 ## Getting Started
 Follow these steps to get the Blog App up and running on your local machine:
 
-Clone the Repository: Start by cloning the repository to your local machine using the following command:
-
-- Clone the repository:
+1. Clone the repository:
+```shell
 git clone <https://github.com/Emmyojile/blogApp.git>
-Install Dependencies: Navigate to the project directory and install the necessary dependencies using npm or yarn:
+```
 
-- Install the dependencies:
+2. Install the dependencies:
+```shell
 cd blog-app
 npm install
+```
 
 - Configure Environment Variables: 
 Create a .env file in the root directory and configure environment variables required for the application, such as database connection settings, JWT secret, etc.
