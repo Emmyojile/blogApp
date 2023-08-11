@@ -9,8 +9,6 @@ const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
 
 // const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
 
-
-
   const [postInfo, setPostInfo] = useState(null);
   const { user } = useContext(UserContext);
   const { id } = useParams();

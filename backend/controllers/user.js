@@ -52,38 +52,7 @@ exports.getSinglePost = async (req, res) => {
   res.json(singlePost);
 }
 
-// exports.updatePost = async (req, res) => {
-//     let newPath = null;
-//   if(req.file) {
-//     const {originalname, path} = req.file;
-//     const parts = originalname.split(".");
-//     const ext = parts[parts.length - 1];
-//     newPath = path+'.'+ext;
-//     fs.renameSync(path, newPath);
-//   }
 
-//   const {token} = req.cookies;
-//   jwt.verify(token, process.env.JWT_SECRET, {}, async (err, info) => {
-//     if(err) throw err;
-
-//     const {id, title, summary, content} = req.body;
-//     const updatePost = await Post.findById(id);
-//     // const isAuthor = updatePost.author === info.id;
-//     const isAuthor = updatePost.author.equals(info.id);
-//     console.log('updatePost.author:', updatePost.author);
-//     console.log('info.id:', info.id);
-//     // const isAuthor = JSON.stringify(updatePost.author) === JSON.stringify(info.id);
-
-//     if(!isAuthor) {
-//       return res.json('you are not the author');
-//     }    
-//     await updatePost.update({
-//       ...req.body,
-//       cover: newPath ? newPath : updatePost.cover
-//     });
-//     res.json(updatePost);
-// })
-// }
 exports.updatePost = async (req, res) => {
   let newPath = null;
   if (req.file) {
@@ -186,5 +155,3 @@ exports.register = async (req, res) => {
       return res.json({ message: 'internal server error' });
     }
   };
-
-
