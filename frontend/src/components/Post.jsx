@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 export default function Post  ({_id, title, summary, cover, content, createdAt, author})  {
 // const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
 
-const PUBLIC_FOLDER = import.meta.env.VITE_API_LIVE_URL
-
-// const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LIVE_URL
+const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LIVE_URL
 
 // const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
 // console.log(PUBLIC_FOLDER + '/' + cover);
