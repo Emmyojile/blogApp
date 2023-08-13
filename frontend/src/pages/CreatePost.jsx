@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 import Editor from "../components/Editor";
 
 export default function CreatePost() {
-    const PUBLIC_FOLDER = import.meta.env.VITE_API_DEV_URL
+    const PUBLIC_FOLDER = import.meta.env.VITE_API_LIVE_URL
+    // const PUBLIC_FOLDER = import.meta.env.VITE_API_LOCAL_URL
     
     const navigate = useNavigate();
 

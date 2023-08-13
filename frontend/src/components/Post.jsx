@@ -2,11 +2,11 @@ import {format} from "date-fns";
 import { Link } from "react-router-dom";
 
 export default function Post  ({_id, title, summary, cover, content, createdAt, author})  {
-// const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
 
-const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_URL
+const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LIVE_URL
 
 // const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
+
 // console.log(PUBLIC_FOLDER + '/' + cover);
 console.log(PUBLIC_FOLDER + cover);
 
@@ -16,9 +16,6 @@ console.log(PUBLIC_FOLDER + cover);
         <div className="image">
         <Link to={`/post/${_id}`}>
         <img src={`${PUBLIC_FOLDER + cover}`} alt="" />
-        {/* <img src={`https://emmyojile-blogapp.onrender.com/${cover}`} alt="" /> */}
-        {/* <img src={"https://emmyojile-blogapp.onrender.com/api/v1/" + cover} alt="" /> */}
-        {/* <img src={"http://localhost:4000/" + cover} alt="" /> */}
         </Link>
         </div>
         <div className='texts'>

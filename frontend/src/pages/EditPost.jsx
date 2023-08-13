@@ -5,7 +5,9 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 export default function EditPost () {
-    const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
+    const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LIVE_URL
+    
+    // const PUBLIC_FOLDER = import.meta.env.VITE_API_PUBLIC_LOCAL_URL
 
     const navigate = useNavigate();
     const {id} = useParams();
